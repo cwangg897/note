@@ -23,6 +23,6 @@ Setter 메서드가 없고, 리플렉션을 통한 필드 접근을 피하고 �
 @RequestBody는 로는 기본생성자를 이용하며 setter나 리플렉션이나을 사용하지만 생성자 주입을 주로 사용한다. <br>
 그래서 record타입이 사용가능하다 <br>
 <br>
-@RequestParam은 기본적으로 Setter 메서드를 통해 파라미터 값을 객체에 주입합니다. <br>
-만약 Setter 메서드가 없으면, Spring은 리플렉션을 통해 필드에 직접 접근하지 않으며, 대신 다음과 같은 상황에서 파라미터를 주입합니다 <br>
+@RequestParam은 기본적으로 Setter 메서드를 통해 파라미터 값을 객체에 주입합니다.<br>
+만약 Setter 메서드가 없으면, Spring은 리플렉션을 통해 필드에 직접 접근하지 않으며, 그래서 dto로 @Requestparam을 사용하면 @Setter를 달아주어야한다 <br>
 그래서 record타입을 사용 불가능하다  <br>
